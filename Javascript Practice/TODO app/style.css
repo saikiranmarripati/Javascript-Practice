@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ccc;
+}
+
+.container {
+  margin: 130px auto;
+  width: 50vw;
+  min-width: 400px;
+  max-width: 500px;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgb(0 0 0 / 0.7);
+  min-height: 400px;
+  padding: 15px;
+}
+
+.input-wrap input {
+  width: 80%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+.input-wrap button {
+  padding: 6px 9px;
+  border: none;
+  color: #fff;
+  background: #007bff;
+  cursor: pointer;
+  margin-left: -4px;
+}
+
+#task-list {
+  margin-top: 40px;
+}
+#task-list > .task {
+  padding: 10px;
+  background: #f3f3f3;
+  margin: 5px 0;
+  font-family: monospace;
+}
+
+#task-list > .task > p {
+  display: inline-block;
+  vertical-align: middle;
+}
+#task-list > .task > input {
+  vertical-align: middle;
+}
+
+#task-list > .task > input:checked + p {
+  text-decoration: line-through;
+}
+#task-list > .task > input:checked ~ span.trash {
+  display: inline !important;
+}
+
+#task-list > .task > span.trash {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  display: none;
+}
